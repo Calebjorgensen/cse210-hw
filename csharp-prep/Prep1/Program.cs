@@ -14,6 +14,8 @@ class Program
 
         Console.WriteLine($"Your name is {last}, {first} {last}");
         Console.WriteLine();
+
+        Console.WriteLine("Thanks for Joining us today!");
     
     }
 }

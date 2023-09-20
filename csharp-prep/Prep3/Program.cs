@@ -15,6 +15,19 @@ class Program
         {
             Console.WriteLine("What is your Guess:  ");
             guess = int.Parse(Console.ReadLine());
+
+            if (number > guess)
+            {
+                Console.WriteLine("Higher");
+            }
+            else if (number < guess)
+            {
+                Console.WriteLine("Lower");
+            }
+            else
+            {
+                Console.WriteLine("You guess right!");
+            }
         }
 
     }

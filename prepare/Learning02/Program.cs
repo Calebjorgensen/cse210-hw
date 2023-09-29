@@ -8,11 +8,13 @@ class Program
 
         Job job1 = new Job();
         job1._jobTitle = "Software Engineer";
+        job1._company = "Apple";
 
         Job job2 = new Job();
         job2._jobTitle = "Computer Programmer";
+        job2._company = "Microsoft";
 
-        Console.WriteLine(job1._jobTitle);
-        Console.WriteLine(job2._jobTitle);
+        job1.Display();
+        job2.Display();
     }
 }

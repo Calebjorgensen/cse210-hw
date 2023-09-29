@@ -1,4 +1,5 @@
 using System;
+using System.ComponentModel.DataAnnotations;
 
 public class Job
 {
@@ -7,6 +8,9 @@ public class Job
     public string _startYear;
     public string _endYear;
 
-    
+    public void Display()
+    {
+        Console.WriteLine($"{_jobTitle}, {_company}");
+    }
 
 }

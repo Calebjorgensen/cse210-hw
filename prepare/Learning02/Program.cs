@@ -8,5 +8,8 @@ class Program
 
         Job job1 = new Job();
         job1._jobTitle = "Software Engineer";
+
+
+        Console.WriteLine(job1._jobTitle);
     }
 }

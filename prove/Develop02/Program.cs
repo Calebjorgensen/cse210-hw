@@ -7,7 +7,9 @@ class Program
     {
         Console.WriteLine("Hello Develop02 World!");
 
-       
+       Journal journal1 = new Journal();
+       journal1._display = "Display";
+
        
        /* int choice = 3;
 

@@ -7,6 +7,11 @@ public class Journal
     public string _save;
     public string _exit;
 
+    public void Display()
+    {
+        Console.WriteLine($"{_display}");
+    }
+
 
 }
 

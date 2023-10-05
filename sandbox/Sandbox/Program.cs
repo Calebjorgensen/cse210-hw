@@ -7,13 +7,16 @@ class Program
         Console.WriteLine("Hello Sandbox World!");
 
 
-        Console.WriteLine("Hello Caleb");
+        Console.WriteLine("Do you enjoy school");
 
-        int price = 1500;
-        if (price < 1770)
+        string answer = Console.ReadLine();
+
+        if(answer == "yes")
         {
-            Console.WriteLine("Discount");
+            Console.WriteLine("Thats Awesome! ");
         }
+
+
 
     }
 }

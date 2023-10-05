@@ -6,4 +6,7 @@ public class Journal
     public string _load;
     public string _save;
     public string _exit;
+
+
 }
+

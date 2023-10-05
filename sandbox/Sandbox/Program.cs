@@ -12,6 +12,8 @@ class Program
         int score = 102;
 
         Console.WriteLine(score > 99);
+        Console.WriteLine(score >= 78);
+        Console.WriteLine(score == 89);
         
 
 

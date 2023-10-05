@@ -9,26 +9,21 @@ class Program
 
         Console.WriteLine("Do you enjoy school");
 
-        string stoplight = Console.ReadLine();
+        string entry = Console.ReadLine();
 
-        if(stoplight == "red")
+        switch(entry)
         {
-            Console.WriteLine("Red");
-            Console.WriteLine("Stop");
-        }
-        else if(stoplight == "Yellow")
-        {
-            Console.WriteLine("Yellow");
-            Console.WriteLine("Slow Down");
-        }
-        else if(stoplight == "green")
-        {
-            Console.WriteLine("Green");
-            Console.WriteLine("Keep going");
-        }
-        else
-        {
-            Console.WriteLine("Bail Bail Bail!");
+            case "1":
+            Console.WriteLine("option 1");
+            break;
+
+            case "2":
+            Console.WriteLine("option 2");
+            break;
+
+            case "3":
+            Console.WriteLine("option 3");
+            break;
         }
 
 

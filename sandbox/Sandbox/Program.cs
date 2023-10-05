@@ -9,11 +9,9 @@ class Program
 
         Console.WriteLine("Hello Caleb");
 
-        string nickname;
+        int score = 102;
 
-        nickname = Console.ReadLine();
-
-        Console.WriteLine($"{nickname}, Welcome to our page! enjoy your time here.");
+        Console.WriteLine(score > 99);
         
 
 

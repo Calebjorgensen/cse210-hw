@@ -9,13 +9,11 @@ class Program
 
         Console.WriteLine("Hello Caleb");
 
-        int count = 3;
+        string nickname;
 
-        while (count <= 17)
-        {
-            Console.WriteLine(count);
-            count++;
-        }
+        nickname = Console.ReadLine();
+
+        Console.WriteLine($"{nickname}, Welcome to our page! enjoy your time here.");
         
 
 

@@ -8,6 +8,14 @@ class Program
 
 
         Console.WriteLine("Hello Caleb");
+
+        int count = 3;
+
+        while (count <= 17)
+        {
+            Console.WriteLine(count);
+            count++;
+        }
         
 
 

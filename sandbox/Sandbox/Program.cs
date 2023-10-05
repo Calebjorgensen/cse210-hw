@@ -9,14 +9,11 @@ class Program
 
         Console.WriteLine("Hello Caleb");
 
-        int score = 102;
-
-        Console.WriteLine(score > 99);
-        Console.WriteLine(score >= 78);
-        Console.WriteLine(score == 89);
-        
-
-
+        int price = 1500;
+        if (price < 1770)
+        {
+            Console.WriteLine("Discount");
+        }
 
     }
 }

@@ -11,14 +11,16 @@ class Program
         Console.WriteLine("Do you enjoy school");
 
         
-        int x = 10;
+        int sum = 0;
+        int num = 100;
 
-        while(x>0)
+        while(num>=0)
         {
-            Console.WriteLine(x);
-            x--;
+            sum+=num;
+            num--;
         }
        
+       Console.WriteLine(sum);
 
 
     }

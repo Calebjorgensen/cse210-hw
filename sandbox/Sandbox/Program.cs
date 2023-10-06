@@ -9,10 +9,12 @@ class Program
 
         Console.WriteLine("Do you enjoy school");
 
-        for(int i = 1; i <= 21; i++)
+        
+        for(int i = 5; i >= 0; i--)
         {
-            Console.WriteLine($"Valve of i: {i}");
+           Console.WriteLine($"Bullets left {i}");
         }
+       
 
 
     }

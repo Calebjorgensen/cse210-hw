@@ -9,6 +9,9 @@ class Program
     {
         
         
+            //I AM GOING TO CHANGE THIS CODE AND START OVER.
+
+
         string userinput;
         Entry input = new Entry();
 

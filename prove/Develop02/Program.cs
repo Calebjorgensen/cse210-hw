@@ -14,11 +14,11 @@ class Program
         
         do
         {
-            Console.WriteLine("Hello there");
-            Console.WriteLine("1. Enter Entry: ");
+            Console.WriteLine("Please select one of the following choices");
+            Console.WriteLine("1. Write Entry: ");
             Console.WriteLine("2. Display Journal: ");
-            Console.WriteLine("3. Save Journal: ");
-            Console.WriteLine("4. Load Journal: ");
+            Console.WriteLine("3. Load Journal: ");
+            Console.WriteLine("4. Save Journal: ");
             Console.WriteLine("5. Exit");
             userinput = Console.ReadLine();
 

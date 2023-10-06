@@ -8,19 +8,11 @@ class Program
         Console.WriteLine("Hello Sandbox World!");
 
 
-        Console.WriteLine("Do you enjoy school");
-
-        
-        int sum = 0;
-        int num = 100;
-
-        while(num>=0)
+        List<string> fish = new List<string> {"trout, bass, catfish, carp"};
+        foreach(var number in fish)
         {
-            sum+=num;
-            num--;
+            Console.WriteLine($"{number}");
         }
-       
-       Console.WriteLine(sum);
 
 
     }

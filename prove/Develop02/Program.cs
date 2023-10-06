@@ -20,6 +20,21 @@ class Program
         Console.WriteLine("5. Exit ");
         choice = Console.ReadLine();
 
+
+
         
+
+       
+       
+       
+       /*
+        Entry write = new Entry();
+        write._newEntry = "Test";
+        write._getPrompt = "This is going to work";
+
+        write.Display();
+        */
+
+
     }
 }

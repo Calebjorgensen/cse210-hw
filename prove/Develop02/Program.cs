@@ -20,7 +20,32 @@ class Program
         Console.WriteLine("5. Exit ");
         choice = Console.ReadLine();
 
+        switch(choice)
+        {
+            case "1":
+            Entry write = new Entry();
+            write._getPrompt = "Lets do this thing!";
+            write._newEntry = "Test";
+            write.Display();
+            break;
 
+            case "2":
+            // This should be used to display the display entries
+            break;
+
+            case "3":
+            // This should be used to load up a journal file
+            break;
+
+            case "4":
+            // This should be used to save a entry
+            break;
+
+            case "5":
+            // To end the Program
+            break;
+
+        }
 
         
 

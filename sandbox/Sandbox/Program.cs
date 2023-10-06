@@ -7,13 +7,14 @@ class Program
     {
         Console.WriteLine("Hello Sandbox World!");
 
-        Welcome();
+        Welcome("Caleb");
+        Welcome("Elle");
         Lesson();
     }
 
-    static void Welcome()
+    static void Welcome(string name )
     {
-        Console.WriteLine("Welcome");
+        Console.WriteLine("Welcome, " + name);
         Console.WriteLine("I am learning about Methods");
     }
     static void Lesson()

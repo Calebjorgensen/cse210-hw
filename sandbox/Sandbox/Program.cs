@@ -1,4 +1,5 @@
 using System;
+using System.Xml.Schema;
 
 class Program
 {
@@ -10,9 +11,12 @@ class Program
         Console.WriteLine("Do you enjoy school");
 
         
-        for(int i = 5; i >= 0; i--)
+        int x = 10;
+
+        while(x>0)
         {
-           Console.WriteLine($"Bullets left {i}");
+            Console.WriteLine(x);
+            x--;
         }
        
 

@@ -7,13 +7,19 @@ class Program
     {
         Console.WriteLine("Hello Sandbox World!");
 
+        Welcome();
+        Lesson();
+    }
 
-        List<string> fish = new List<string> {"trout, bass, catfish, carp"};
-        foreach(var number in fish)
-        {
-            Console.WriteLine($"{number}");
-        }
-
-
+    static void Welcome()
+    {
+        Console.WriteLine("Welcome");
+        Console.WriteLine("I am learning about Methods");
+    }
+    static void Lesson()
+    {
+        Console.WriteLine("Lesson One is covering Classes");
+        Console.WriteLine("");
+        Console.WriteLine("Please begin to take notes");
     }
 }

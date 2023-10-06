@@ -24,9 +24,10 @@ class Program
         {
             case "1":
             Entry write = new Entry();
-            write._getPrompt = "Lets do this thing!";
+            write._getPrompt = "HI";
             write._newEntry = "Test";
             write.Display();
+            write.PromptGenerator();
             break;
 
             case "2":

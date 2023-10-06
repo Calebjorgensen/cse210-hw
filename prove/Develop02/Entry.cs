@@ -6,6 +6,7 @@ public class Entry
     public string _getPrompt;
     public string _submit;
 
+
     
 
 }

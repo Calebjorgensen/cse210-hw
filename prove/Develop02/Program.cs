@@ -28,17 +28,17 @@ class Program
             {
                 case "1":
                 // This will be for Entrys.
-                Entry userInput = new Entry();
-                userInput._newEntry = "This is a test";
-                userInput._getPrompt = "Hello there!";
+                Entry user = new Entry();
                 DateTime theCurrentTime = DateTime.Now;
-                userInput._date = theCurrentTime.ToShortDateString();
-                userInput._time = theCurrentTime.ToShortTimeString();
-                userInput.Display();
+                user._date = theCurrentTime.ToShortDateString();
+                user._time = theCurrentTime.ToShortTimeString();
+                user._newEntry = Console.ReadLine();
+                user.Display();
                 break;
 
                 case "2":
                 // This should be used to display the display entries
+                
                 break;
 
                 case "3":

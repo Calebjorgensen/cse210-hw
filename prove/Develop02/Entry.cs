@@ -16,6 +16,7 @@ _submit not sure what the sumbut is suppose to do??
     public string _time;
 
 
+// I need to figure this part out. 
 public void Prompt()
 {
     

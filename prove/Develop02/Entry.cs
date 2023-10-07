@@ -28,7 +28,10 @@ public Entry()
 private static List<string> prompts = new List<string>
 {
     "How have you seen the Hand of God in your life today?",
-    "What are 3 postive things that happen to you today?"
+    "What are 3 postive things that happen to you today?",
+    "Did you meet anyone new today?",
+    "What did you talk about with your family and freinds today?",
+    "How will you be better tomorrow?",
 };
 
 private static string GenerateRandomPrompt()

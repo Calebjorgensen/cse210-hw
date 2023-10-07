@@ -28,8 +28,8 @@ class Program
             {
                 case "1":
                 // This will be for Entrys.
-                Entry text = new Entry();
-                text._newEntry = "Test";
+                DateTime CurrentTime = DateTime.Now;
+                
                 break;
 
                 case "2":

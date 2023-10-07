@@ -18,7 +18,7 @@ _submit not sure what the sumbut is suppose to do??
 
 public void Prompt()
 {
-
+    Console.WriteLine($"{_newEntry}");
 }
 
 }

@@ -27,7 +27,9 @@ class Program
             switch(choice)
             {
                 case "1":
-                Entry write = new Entry();
+                // This will be for Entrys.
+                Entry text = new Entry();
+                text._newEntry = "Test";
                 break;
 
                 case "2":

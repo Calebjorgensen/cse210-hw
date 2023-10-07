@@ -28,7 +28,6 @@ class Program
             {
                 case "1":
                 Entry write = new Entry();
-                write.PromptGen();
                 break;
 
                 case "2":

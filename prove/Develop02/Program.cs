@@ -28,8 +28,10 @@ class Program
             {
                 case "1":
                 // This will be for Entrys.
-                DateTime CurrentTime = DateTime.Now;
-                
+                Entry input = new Entry();
+                input._newEntry = "This is a test";
+                input._getPrompt = "Hello there!";
+                input.Display();
                 break;
 
                 case "2":

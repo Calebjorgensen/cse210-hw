@@ -19,6 +19,17 @@ _submit not sure what the sumbut is suppose to do??
 public void Prompt()
 {
     
+    
+}
+public void Display()
+{
+    Console.WriteLine($"{_newEntry}, {_getPrompt}, {_date}, {_time}");
+    
+}
+public string NewLine()
+{
+    Console.WriteLine($"{_newEntry}, {_getPrompt}, {_date}, {_time}");
+    return NewLine();
 }
 
 

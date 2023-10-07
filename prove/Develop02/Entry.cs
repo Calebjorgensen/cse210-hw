@@ -22,9 +22,6 @@ public Entry()
     
 }
 
-//This Method is so that I can Display the _newEntry, and the _getPrompt
-
-
 private static List<string> prompts = new List<string>
 {
     "How have you seen the Hand of God in your life today?",

@@ -28,10 +28,13 @@ class Program
             {
                 case "1":
                 // This will be for Entrys.
-                Entry input = new Entry();
-                input._newEntry = "This is a test";
-                input._getPrompt = "Hello there!";
-                input.Display();
+                Entry userInput = new Entry();
+                userInput._newEntry = "This is a test";
+                userInput._getPrompt = "Hello there!";
+                DateTime theCurrentTime = DateTime.Now;
+                userInput._date = theCurrentTime.ToShortDateString();
+                userInput._time = theCurrentTime.ToShortTimeString();
+                userInput.Display();
                 break;
 
                 case "2":

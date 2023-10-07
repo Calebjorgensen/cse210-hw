@@ -48,19 +48,5 @@ class Program
 
         }
 
-        
-
-       
-       
-       
-       /*
-        Entry write = new Entry();
-        write._newEntry = "Test";
-        write._getPrompt = "This is going to work";
-
-        write.Display();
-        */
-
-
     }
 }

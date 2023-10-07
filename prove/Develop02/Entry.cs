@@ -21,14 +21,18 @@ public void Prompt()
     
     
 }
+
+// This display, the varibles need to be in the right order. Date,time,prompt,entry.
 public void Display()
 {
-    Console.WriteLine($"{_newEntry}, {_getPrompt}, {_date}, {_time}");
+    Console.WriteLine($"{_date}, {_time}, {_getPrompt}, {_newEntry}");
     
 }
+
+//This is should follow the same order as above.
 public string NewLine()
 {
-    Console.WriteLine($"{_newEntry}, {_getPrompt}, {_date}, {_time}");
+    Console.WriteLine($"{_date}, {_time}, {_getPrompt}, {_newEntry}");
     return NewLine();
 }
 

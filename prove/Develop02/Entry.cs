@@ -45,7 +45,9 @@ private static string GenerateRandomPrompt()
 // Has not worked yet. 
 public void PromptGen()
 {
-    Console.WriteLine("Enter 5 into to Exit");
+    Console.WriteLine("");
+    Console.WriteLine("Type Enter for Prompt or 5 to Exit:");
+    Console.WriteLine("");
     while (true)
     {
         var key = Console.ReadKey(true);

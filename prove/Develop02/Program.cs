@@ -24,10 +24,7 @@ class Program
         {
             case "1":
             Entry write = new Entry();
-            write._getPrompt = "HI";
-            write._newEntry = "Test";
-            write.Display();
-            write.PromptGenerator();
+            write.PromptGen();
             break;
 
             case "2":

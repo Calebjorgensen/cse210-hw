@@ -1,5 +1,6 @@
 using System;
 using System.Runtime.CompilerServices;
+using System.Security.Cryptography;
 using System.Security.Cryptography.X509Certificates;
 
 // Class Name Entry
@@ -22,18 +23,39 @@ public Entry()
 }
 
 //This Method is so that I can Display the _newEntry, and the _getPrompt
-public void Display()
+
+
+private static List<string> prompts = new List<string>
 {
-    Console.WriteLine($"{_newEntry}");
-    Console.WriteLine($"{_getPrompt}");
-}    
+    "How have you seen the Hand of God in your life today?",
+    "What are 3 postive things that happen to you today?"
+};
+
+private static string GenerateRandomPrompt()
+{
+    Random random = new Random();
+    int index = random.Next(prompts.Count);
+    return prompts[index];
+}
 
 //Goal of this Method is to create a list of prompts and have them random generate. 
 // Has not worked yet. 
-public void PromptGenerator()
+public void PromptGen()
 {
-
-    Console.WriteLine($"{_getPrompt}");
+    Console.WriteLine("Enter 5 into to Exit");
+    while (true)
+    {
+        var key = Console.ReadKey(true);
+        if (key.KeyChar == '5' || key.KeyChar == '5')
+        {
+            break;
+        }
+        else
+        {
+            Console.WriteLine(GenerateRandomPrompt());
+        }
+    }
+    
 }
 
 

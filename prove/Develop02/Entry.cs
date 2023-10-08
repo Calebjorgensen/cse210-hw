@@ -20,6 +20,8 @@ _time
 
 // I need to figure this part out. 
 
+// The prompt works but only for the first prompt
+
 
 public string Prompts()
 {

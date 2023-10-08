@@ -22,6 +22,10 @@ public void SaveFile()
 {
     
 }
+public void LoadFile()
+{
+    
+}
 
 }
 

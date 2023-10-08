@@ -7,12 +7,12 @@ public class Journal
     public string _save;
     public string _exit;
 
-    public List<Entry> _savedJournal = new List<Entry>();
+    public List<Entry> _list = new List<Entry>();
 
     public void Display()
     {
         Console.WriteLine("Journal Entries ");
-        foreach (Entry journalFile in _savedJournal)
+        foreach (Entry journalFile in _list)
         {
             journalFile.Display();
         }

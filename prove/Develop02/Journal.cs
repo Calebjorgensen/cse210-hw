@@ -18,6 +18,10 @@ public class Journal
         }
     }
 
+public void SaveFile()
+{
+    
+}
 
 }
 

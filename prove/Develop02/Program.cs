@@ -27,14 +27,15 @@ class Program
 
             switch(choice)
             {
+
+                // ALL OF CASE ONE CONNECTS TO ENTRY SO FAR, NOTHING CONNECTS TO THE JOURNAL YET.
                 case "1":
-                // This will be for Entrys.
                 Entry user = new Entry(); // This is the Instantiate
                 DateTime theCurrentTime = DateTime.Now; // To get time and date
                 user._date = theCurrentTime.ToShortDateString(); // get the date for the entry
                 user._time = theCurrentTime.ToShortTimeString(); // get the time for the entry
                 user._newEntry = Console.ReadLine(); // User can input there entry
-                user.Display();
+                user.Display(); // This is use to display data.
                 break;
 
                 case "2":

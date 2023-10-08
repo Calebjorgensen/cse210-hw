@@ -1,4 +1,5 @@
 using System;
+using System.Security.Cryptography;
 using System.Xml.Serialization;
 
 
@@ -28,11 +29,11 @@ class Program
             {
                 case "1":
                 // This will be for Entrys.
-                Entry user = new Entry();
-                DateTime theCurrentTime = DateTime.Now;
-                user._date = theCurrentTime.ToShortDateString();
-                user._time = theCurrentTime.ToShortTimeString();
-                user._newEntry = Console.ReadLine();
+                Entry user = new Entry(); // This is the Instantiate
+                DateTime theCurrentTime = DateTime.Now; // To get time and date
+                user._date = theCurrentTime.ToShortDateString(); // get the date for the entry
+                user._time = theCurrentTime.ToShortTimeString(); // get the time for the entry
+                user._newEntry = Console.ReadLine(); // User can input there entry
                 user.Display();
                 break;
 

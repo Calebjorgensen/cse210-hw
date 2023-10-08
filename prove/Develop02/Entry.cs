@@ -8,7 +8,8 @@ public class Entry
 /* Variables for this class are, newEntry, getPrompt, and sumbit
 _newEntry is to record the new journal entyr of the user
 _getPrompt is to randomize a prompt for the new entry
-_submit not sure what the sumbut is suppose to do?? 
+_date
+_time
 
 */
     public string _newEntry;
@@ -33,7 +34,8 @@ public void Display()
     
 }
 
-//This is should follow the same order as above.
+
+// This is use to enter in a new line or another prompt. string NewLine isn't connected anywhere so this method doesn't do anything yet.
 public string NewLine()
 {
     Console.WriteLine($"{_date}~|~{_time}~|~{_getPrompt}~|~{_newEntry}");

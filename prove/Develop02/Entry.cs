@@ -21,9 +21,17 @@ _time
 // I need to figure this part out. 
 
 
-public void Prompt()
+public static string[] GenerateRandomPrompts()
 {
-    
+    Random random = new Random();
+    string[] prompts = new string[5];
+    prompts [1] = "How have you seen the hand of God in your life today?";
+    prompts [2] = "What are 3 positive things from you life today? ";
+    prompts [3] = "How did you should love today?";
+    prompts [4] = "What was one difficult thing from today?";
+    prompts [5] = "Whats one goal you want to complete for tomorrow?";
+
+    return prompts;
     
 }
 

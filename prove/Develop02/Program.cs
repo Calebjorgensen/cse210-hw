@@ -35,6 +35,7 @@ class Program
                 DateTime theCurrentTime = DateTime.Now; // To get time and date
                 user._date = theCurrentTime.ToShortDateString(); // get the date for the entry
                 user._time = theCurrentTime.ToShortTimeString(); // get the time for the entry
+                Console.WriteLine(user._getPrompt = user.Prompts());
                 user._newEntry = Console.ReadLine(); // User can input there entry
                 user.Display(); // This is use to display data.
                 break;

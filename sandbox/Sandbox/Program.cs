@@ -8,18 +8,27 @@ class Program
     static void Main(string[] args)
     {
 
-        int price = 30;
-        int spend = int.Parse(Console.ReadLine());
+        double userPrice = double.Parse(Console.ReadLine());
 
-        bool discount = spend > price;
+        double ten = 10 / .15;
+        double twenty = 20 / .20;
+        double thirty = 30 / .30;
 
-        if (discount)
+        if(userPrice > ten)
         {
-            Console.WriteLine($"All purchasing over {price} get a discount");
+            Console.WriteLine("You get a 15% Discount");
+        }
+        else if(userPrice > twenty)
+        {
+            Console.WriteLine("You get a 20% Discount");
+        }
+        else if(userPrice > thirty)
+        {
+            Console.WriteLine("You get a 30% Discount");
         }
         else
         {
-            Console.WriteLine($"Your price is lower them ${price} so no discount can be added");
+            Console.WriteLine("No discount applied.");
         }
 
     }

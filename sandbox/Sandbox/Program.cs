@@ -10,9 +10,12 @@ class Program
 
         int price = 30;
         int spend = int.Parse(Console.ReadLine());
-        if (spend > price)
+
+        bool discount = spend > price;
+
+        if (discount)
         {
-            Console.WriteLine("You get a discount");
+            Console.WriteLine($"All purchasing over {price} get a discount");
         }
         else
         {

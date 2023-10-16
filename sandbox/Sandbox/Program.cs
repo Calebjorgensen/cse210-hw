@@ -1,21 +1,24 @@
 using System;
-using System.Globalization;
 
 
+public class Job
+{
+    public string _company;
+
+
+    public void Display()
+    {
+        Console.WriteLine("Hello");
+    }
+
+}
 
 class Program
 {
     static void Main(string[] args)
     {
-        List<string> _greeting = new List<string>();
-        _greeting.Add("Hello");
-        _greeting.Add("Hey");
-        _greeting.Add("Hi");
-        foreach(string greet in _greeting)
-        {
-            Console.WriteLine(greet);
-        }
-
+        Job j = new Job();
+        j.Display();        
     }
        
 }

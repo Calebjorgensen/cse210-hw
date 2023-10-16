@@ -15,7 +15,7 @@ _time
     public string _newEntry;
     public string _getPrompt;
     public string _date;
-    public string _time;
+    
 
 
 // I need to figure this part out. 
@@ -33,7 +33,9 @@ public string Prompts()
         "What was one difficult thing from today?",
         "What's one goal you want to complete for tomorrow?",
     };
-    string prompt = prompts[0];
+    Random random = new Random();
+    int randomIndex = random.Next(0, prompts.Length);
+    string prompt = prompts[randomIndex];
 
     return prompt;
     
@@ -42,16 +44,15 @@ public string Prompts()
 // This display, the varibles need to be in the right order. Date,time,prompt,entry.
 public void Display()
 {
-    Console.WriteLine($"{_date}~|~{_time}~|~{_getPrompt}~|~{_newEntry}");
+    Console.WriteLine($"{_date}~|~{_getPrompt}~|~{_newEntry}");
     
 }
 
 
 // This is use to enter in a new line or another prompt. string NewLine isn't connected anywhere so this method doesn't do anything yet.
-public string NewLine()
+public string GetInfo()
 {
-    Console.WriteLine($"{_date}~|~{_time}~|~{_getPrompt}~|~{_newEntry}");
-    return NewLine();
+    return $"{_date}~|~{_getPrompt}~|~{_newEntry}";
 }
 
 

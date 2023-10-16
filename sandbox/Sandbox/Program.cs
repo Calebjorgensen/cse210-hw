@@ -11,6 +11,12 @@ public class Job
         Console.WriteLine("Hello");
     }
 
+    public string GetInfo()
+    {
+        Console.WriteLine("Test test");
+        return GetInfo();
+    }
+
 }
 
 class Program
@@ -18,7 +24,8 @@ class Program
     static void Main(string[] args)
     {
         Job j = new Job();
-        j.Display();        
+        j.Display();   
+        j.GetInfo();   
     }
        
 }

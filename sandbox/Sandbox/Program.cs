@@ -1,31 +1,40 @@
 using System;
+using System.Diagnostics.Contracts;
+using System.Xml.XPath;
 
 
-public class Job
+public class Calculator
 {
-    public string _company;
+    public int _add;
 
-
-    public void Display()
+    public void Addiction()
     {
-        Console.WriteLine("Hello");
+        int x = 10;
+        int y = 9;
+
+        int answer = x + y;
+
+        Console.WriteLine(answer);
+        
     }
 
-    public string GetInfo()
+    public void Substraction()
     {
-        Console.WriteLine("Test test");
-        return GetInfo();
-    }
+        int s = 73;
+        int a = 10;
 
+        int answer2 = s - a;
+        Console.WriteLine(answer2);
+    }
 }
 
 class Program
 {
     static void Main(string[] args)
     {
-        Job j = new Job();
-        j.Display();   
-        j.GetInfo();   
+        Calculator m = new Calculator();
+        m.Addiction();
+        m.Substraction();
     }
        
 }

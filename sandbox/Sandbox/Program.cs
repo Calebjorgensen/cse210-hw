@@ -26,7 +26,18 @@ public class Calculator
         int answer2 = s - a;
         Console.WriteLine(answer2);
     }
+
+    public void multiplication()
+    {
+        int t = 5;
+        int m = 5;
+
+        int answer3 = t * m;
+        Console.WriteLine(answer3);
+    }
 }
+
+
 
 class Program
 {
@@ -35,6 +46,7 @@ class Program
         Calculator m = new Calculator();
         m.Addiction();
         m.Substraction();
+        m.multiplication();
     }
        
 }

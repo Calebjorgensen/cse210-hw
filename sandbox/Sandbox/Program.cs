@@ -1,28 +1,42 @@
 using System;
 
 
-
-public class Soups
+public class Fraction
 {
-    public string _warmSoups;
-    public string _coldSoups;
+    public int _top;
+    public int _bottom;
 
-    public void Dispay()
+    public Fraction()
     {
-        Console.WriteLine($"{_warmSoups}");
-        Console.WriteLine($"{_coldSoups}");
+        _top = 1;
+        _bottom = 1;
+    }
+    public Fraction(int WholeNumber)
+    {
+        _top = WholeNumber;
+        _bottom = 1;
+    }
+
+    public string GetFraction()
+    {
+        string text = $"{_top}/{_bottom}";
+        return text;
+    }
+    public double Decimal()
+    {
+        return (double) _top / (double) _bottom;
     }
 }
+
 
 
 class Program
 {
     static void Main(string[] args)
     {
-        Soups s = new Soups();
-        s._warmSoups = "Broccoli and Cheese soup";
-        s._coldSoups = "Thai soup";
-        s.Dispay();
+        Fraction f1 = new Fraction();
+        Console.WriteLine(f1.GetFraction());
+        Console.WriteLine(f1.Decimal());
     }
        
 }

@@ -1,42 +1,22 @@
 using System;
+using System.Reflection.Metadata.Ecma335;
 
-
-public class Fraction
+class Bank
 {
-    public int _top;
-    public int _bottom;
+    private string accountNum = "0123456789";
 
-    public Fraction()
+    public string Account
     {
-        _top = 1;
-        _bottom = 1;
-    }
-    public Fraction(int WholeNumber)
-    {
-        _top = WholeNumber;
-        _bottom = 1;
-    }
-
-    public string GetFraction()
-    {
-        string text = $"{_top}/{_bottom}";
-        return text;
-    }
-    public double Decimal()
-    {
-        return (double) _top / (double) _bottom;
+        get {return accountNum;}
     }
 }
-
-
 
 class Program
 {
     static void Main(string[] args)
     {
-        Fraction f1 = new Fraction();
-        Console.WriteLine(f1.GetFraction());
-        Console.WriteLine(f1.Decimal());
+        Bank card = new Bank();
+        Console.WriteLine(card.Account);
     }
        
 }

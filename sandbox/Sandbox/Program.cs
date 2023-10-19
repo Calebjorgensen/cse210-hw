@@ -1,13 +1,19 @@
 using System;
-using System.Reflection.Metadata.Ecma335;
 
-class Bank
+
+public class Person
 {
-    private string accountNum = "0123456789";
+    private string name;
 
-    public string Account
+
+    public void NewPost()
     {
-        get {return accountNum;}
+        Console.WriteLine("Hello There");
+    }
+    public string Name // This is a property
+    {
+        get {return name;}
+        set {name = value;}
     }
 }
 
@@ -15,8 +21,10 @@ class Program
 {
     static void Main(string[] args)
     {
-        Bank card = new Bank();
-        Console.WriteLine(card.Account);
+        Person p = new Person();
+        p.NewPost();
+        p.Name = "Caleb";
+        Console.WriteLine(p.Name);
     }
        
 }

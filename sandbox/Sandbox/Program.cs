@@ -1,30 +1,45 @@
 using System;
 
-
-public class Person
+public class Hose
 {
-    private string name;
+    public string _size;
+    public string _length;
+    public string _color;
 
-
-    public void NewPost()
+    public void ShowSizes()
     {
-        Console.WriteLine("Hello There");
+        Console.WriteLine($"{_size}");
     }
-    public string Name // This is a property
+
+    public void ShowLengths()
     {
-        get {return name;}
-        set {name = value;}
+        Console.WriteLine($"{_length}");
+    }
+
+    public void ShowColors()
+    {
+        Console.WriteLine($"{_color}");
     }
 }
+
 
 class Program
 {
     static void Main(string[] args)
     {
-        Person p = new Person();
-        p.NewPost();
-        p.Name = "Caleb";
-        Console.WriteLine(p.Name);
+        Hose l = new Hose();
+        l._length = "25ft, 50ft, 75ft, 100ft";
+        l.ShowLengths();
+
+        Console.WriteLine("");
+
+        Hose s = new Hose();
+        s._size = "1/4, 3/8, 1/2, 3/4";
+        s.ShowSizes();
+
+        Hose c = new Hose();
+        c._color = "Red, Black, Blue, White, Yellow, Green";
+        c.ShowColors();
     }
        
 }

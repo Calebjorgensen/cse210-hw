@@ -2,9 +2,9 @@ using System;
 
 public class Hose
 {
-    public string _size;
-    public string _length;
-    public string _color;
+    private string _size;
+    private string _length;
+    private string _color;
 
     public void ShowSizes()
     {
@@ -20,6 +20,23 @@ public class Hose
     {
         Console.WriteLine($"{_color}");
     }
+
+    public string GetInfoC
+    {
+        get {return _color;}
+        set {_color = value;}
+    }
+    public string GetInfoL
+    {
+        get {return _length;}
+        set {_length = value;}
+    }
+    public string GetInfoS
+    {
+        get {return _size;}
+        set {_size = value;}
+    }
+
 }
 
 
@@ -27,18 +44,16 @@ class Program
 {
     static void Main(string[] args)
     {
-        Hose l = new Hose();
-        l._length = "25ft, 50ft, 75ft, 100ft";
-        l.ShowLengths();
-
-        Console.WriteLine("");
-
         Hose s = new Hose();
-        s._size = "1/4, 3/8, 1/2, 3/4";
+        s.GetInfoS = "1/4, 1/2, 3/4, 1";
         s.ShowSizes();
 
+        Hose l = new Hose();
+        l.GetInfoL = "25ft, 50ft, 75ft, 100ft";
+        l.ShowLengths();
+
         Hose c = new Hose();
-        c._color = "Red, Black, Blue, White, Yellow, Green";
+        c.GetInfoC = "Red, Black, Blue, White, Yellow, Green";
         c.ShowColors();
     }
        

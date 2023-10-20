@@ -8,9 +8,12 @@ class Program
     static void Main(string[] args)
     {  
 
-        int x = 5;
-        Console.WriteLine(++x);
-        Console.WriteLine(x);
+        int price = 30;
+        int discount = 2;
+
+        price /= discount;
+
+        Console.WriteLine(price);
         
 
     }

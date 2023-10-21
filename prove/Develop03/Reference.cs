@@ -6,15 +6,14 @@ public class Reference
     private string _book;
     private string _chapter;
     private string _verse;
-    private string _endVerse;
+    
 
 
     public Reference(string book, string chapter, string verse, string endVerse)
     {
         _book = book;
         _chapter = chapter;
-        _verse = verse;
-        _endVerse = endVerse;
+        _verse = $"{verse}-{endVerse}";
     }
 
     public Reference(string book, string chapter, string verse)
@@ -22,9 +21,12 @@ public class Reference
         _book = book;
         _chapter = chapter;
         _verse = verse;
-        _endVerse = null;
     }
 
     // GetReferenceString()
     //  RETURN "{book} {chapter}..."
+    public string GetReferenceString()
+    {
+        return $"{_book} {_chapter}: {_verse}";
+    }
 }

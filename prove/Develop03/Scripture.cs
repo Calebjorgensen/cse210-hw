@@ -2,14 +2,20 @@ using System;
 
 public class Scripture
 {
-    private List<Word> _words = new();
+    private List<Word> _words = new List<Word>();
     private Reference _reference;
-    private Random random = new();
+    private Random random = new Random();
 
     public Scripture(string text, Reference reference)
     {
         _reference = reference;
-        //...
+        string[] textArray = text.Split(' ');
+        foreach(string t in textArray)
+        {
+            Word w = new Word(t);
+            _words.Add(w);
+
+        }
     }
 }
 

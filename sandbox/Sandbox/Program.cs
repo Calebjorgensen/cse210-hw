@@ -9,11 +9,13 @@ class Program
     {  
 
         
-        int number1 = Convert.ToInt32(Console.ReadLine());
-        int number2 = Convert.ToInt32(Console.ReadLine());
+        int wins;
+        int ties;
 
-        // Adding the too new Ints 
-        int answer = number1 + number2;
+        wins = Convert.ToInt32(Console.ReadLine());
+        ties = Convert.ToInt32(Console.ReadLine());
+
+        double answer = (wins * 1) + (ties * 0.5);
 
         Console.WriteLine(answer);
         

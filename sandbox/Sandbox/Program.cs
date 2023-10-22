@@ -9,17 +9,17 @@ class Program
     {  
 
         
-        Console.WriteLine("Do you enjoy learning?");
+        // 2 things to make the a team. free throws, and speed
+        int free = 18;
+        int speed = 20;
 
-        string input = Console.ReadLine();
-
-        if(input == "yes")
+        if(free>=15 || speed>= 25)
         {
-            Console.WriteLine("Thats awesome!");
+            Console.WriteLine("You made the team");
         }
         else
         {
-            Console.WriteLine("Well you should start liking it");
+            Console.WriteLine("Try again next year");
         }
         
 

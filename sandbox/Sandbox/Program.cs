@@ -9,15 +9,18 @@ class Program
     {  
 
         
-        int wins;
-        int ties;
+        Console.WriteLine("Do you enjoy learning?");
 
-        wins = Convert.ToInt32(Console.ReadLine());
-        ties = Convert.ToInt32(Console.ReadLine());
+        string input = Console.ReadLine();
 
-        double answer = (wins * 1) + (ties * 0.5);
-
-        Console.WriteLine(answer);
+        if(input == "yes")
+        {
+            Console.WriteLine("Thats awesome!");
+        }
+        else
+        {
+            Console.WriteLine("Well you should start liking it");
+        }
         
 
     }

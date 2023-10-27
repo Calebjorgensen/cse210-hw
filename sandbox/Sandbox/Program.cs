@@ -9,19 +9,10 @@ class Program
     {  
 
         
-        // 2 things to make the a team. free throws, and speed
-        int free = 18;
-        int speed = 20;
-
-        if(free>=15 || speed>= 25)
+        for (int x = 7; x <= 25; x++)
         {
-            Console.WriteLine("You made the team");
+            Console.WriteLine(x);
         }
-        else
-        {
-            Console.WriteLine("Try again next year");
-        }
-        
 
     }
        

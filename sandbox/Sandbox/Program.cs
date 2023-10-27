@@ -9,7 +9,7 @@ class Program
     {  
 
         
-        for (int x = 7; x <= 25; x++)
+        for (int x = 5; x >= 0; x--)
         {
             Console.WriteLine(x);
         }

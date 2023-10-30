@@ -1,4 +1,6 @@
 using System;
+using System.Security.Principal;
+
 
 
 
@@ -7,15 +9,13 @@ class Program
 {
     static void Main(string[] args)
     {  
+        int bullets = 10;
 
-        int x = 0;
-
-        while(x<=21)
+        while(bullets>0)
         {
-            Console.WriteLine(x);
-            x+=3;
+            Console.WriteLine($"Bullets left {bullets}");
+            bullets--;
         }
-
 
     }
        

@@ -1,5 +1,5 @@
 using System;
-using System.Security.Principal;
+
 
 
 
@@ -8,15 +8,17 @@ using System.Security.Principal;
 class Program
 {
     static void Main(string[] args)
-    {  
-        int bullets = 10;
+    {
+        Math();
+    }    
 
-        while(bullets>0)
+    static void Math()
+    {
+        string name = Console.ReadLine();
+        Console.WriteLine(name);
+        for(int x = 10; x >=0; x--)
         {
-            Console.WriteLine($"Bullets left {bullets}");
-            bullets--;
+            Console.WriteLine(x);
         }
-
     }
-       
 }

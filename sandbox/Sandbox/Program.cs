@@ -5,20 +5,16 @@ class Program
 {
     static void Main(string[] args)
     {
-       Discount("Caleb", 2000);
-       Discount("Elle", 1300);
+        double foot = Convert.ToInt32(Console.ReadLine());
+        Converter(foot);
+        
 
     }    
 
-    static void Discount(string name, double purchase)
+    static void Converter(double foot)
     {
-        if(purchase>1500)
-        {
-            purchase*=0.85;
-        }
-        Console.WriteLine("Hello " + name);
-        Console.WriteLine("Your total today is " + purchase);
-
+        foot *=12;
+        Console.WriteLine(foot);
     }
 
 }

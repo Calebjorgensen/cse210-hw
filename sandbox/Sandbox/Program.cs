@@ -1,4 +1,5 @@
 using System;
+using System.Runtime.CompilerServices;
 
 
 
@@ -9,15 +10,12 @@ class Program
 {
     static void Main(string[] args)
     {
-        Math("Caleb");
+        Percent(640,24);
     }    
 
-    static void Math(string name)
+    static void Percent(double num, int percentage)
     {
-        Console.WriteLine("Hello There, Welcome to our game! " + name);
-        for(int x = 27; x >= 3; x-=3)
-        {
-            Console.WriteLine(x);
-        }
+        double res = num*percentage/100;
+        Console.WriteLine(res);
     }
 }

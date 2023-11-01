@@ -9,14 +9,13 @@ class Program
 {
     static void Main(string[] args)
     {
-        Math();
+        Math("Caleb");
     }    
 
-    static void Math()
+    static void Math(string name)
     {
-        string name = Console.ReadLine();
-        Console.WriteLine(name);
-        for(int x = 10; x >=0; x--)
+        Console.WriteLine("Hello There, Welcome to our game! " + name);
+        for(int x = 27; x >= 3; x-=3)
         {
             Console.WriteLine(x);
         }

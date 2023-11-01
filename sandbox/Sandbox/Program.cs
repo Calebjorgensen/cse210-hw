@@ -11,10 +11,11 @@ class Program
 
     }    
 
-    static void Converter(double foot)
+    static double Converter(double foot)
     {
         foot *=12;
         Console.WriteLine(foot);
+        return foot;
     }
 
 }

@@ -1,21 +1,24 @@
 using System;
-using System.Runtime.CompilerServices;
-
-
-
-
 
 
 class Program
 {
     static void Main(string[] args)
     {
-        Percent(640,24);
+       Discount("Caleb", 2000);
+       Discount("Elle", 1300);
+
     }    
 
-    static void Percent(double num, int percentage)
+    static void Discount(string name, double purchase)
     {
-        double res = num*percentage/100;
-        Console.WriteLine(res);
+        if(purchase>1500)
+        {
+            purchase*=0.85;
+        }
+        Console.WriteLine("Hello " + name);
+        Console.WriteLine("Your total today is " + purchase);
+
     }
+
 }

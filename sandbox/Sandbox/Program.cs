@@ -1,14 +1,13 @@
 using System;
 
-class Person
+class Bank
 {
-    public string _name;
-    public int _age;
+    //public string _email;
 
-    public void sayHi()
+    // This is a Constructor. The Idea of this is to do less code to get the same result.
+    public Bank()
     {
-        Console.WriteLine($"Hello {_name}");
-        Console.WriteLine($"Your age is {_age}");
+        Console.WriteLine("Send Email to user");
     }
 }
 
@@ -17,10 +16,7 @@ class Program
 {
     static void Main(string[] args)
     {
-        Person p1 = new Person();
-        p1._name = "Caleb";
-        p1._age = 24;
-        p1.sayHi();
+        Bank b = new Bank();
 
     }    
 

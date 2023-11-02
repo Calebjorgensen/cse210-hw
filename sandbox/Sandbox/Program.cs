@@ -1,21 +1,25 @@
 using System;
 
+class Person
+{
+    public string _name;
+    public int _age;
+
+    public void sayHi()
+    {
+        Console.WriteLine("hi");
+    }
+}
+
 
 class Program
 {
     static void Main(string[] args)
     {
-        double foot = Convert.ToInt32(Console.ReadLine());
-        Converter(foot);
         
 
     }    
 
-    static double Converter(double foot)
-    {
-        foot *=12;
-        Console.WriteLine(foot);
-        return foot;
-    }
+
 
 }

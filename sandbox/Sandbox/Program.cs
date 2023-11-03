@@ -1,28 +1,24 @@
 using System;
 
-class Bank
+
+class Person
 {
-    public string _email;
-
-    // This is a Constructor. The Idea of this is to do less code to get the same result.
-    public Bank()
+    private string _name;
+    public string Name
     {
-        Console.WriteLine("Send Email to user");
-    }
+        get {return _name;}
+        set {_name = value;}
 
-    public string Email(string _email)
-    {
-        Console.WriteLine(_email);
-        return _email;
     }
 }
-
 
 class Program
 {
     static void Main(string[] args)
     {
-        Bank b = new Bank();
+        Person p = new Person();
+        p.Name = "Caleb";
+        Console.WriteLine(p.Name);
 
     }    
 

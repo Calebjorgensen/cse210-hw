@@ -20,18 +20,29 @@ class Program
     {
         Calculator c = new Calculator();
 
-        int choice = Convert.ToInt32(Console.ReadLine());
+        int choice;
 
-        do 
+        do
         {
+
+            Console.WriteLine("1. For Addiction");
+            Console.WriteLine("2. For Substraction");
+            Console.WriteLine("3. For times");
+            Console.WriteLine("4. for division");
+            Console.WriteLine("5. To Exit");
+
+            choice = Convert.ToInt32(Console.ReadLine());
+
+
+        
         switch(choice)
         {
             case 1:
-            Console.WriteLine("Welcome to addiction");
+            Console.WriteLine("Case 1");
             break;
 
             case 2:
-            Console.WriteLine("Hello");
+            Console.WriteLine("Case 2");
             break;
 
             case 3:

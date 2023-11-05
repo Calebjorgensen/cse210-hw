@@ -3,7 +3,7 @@ using System;
 class Activity
 {
     public int _timer;
-    public string _name;
+    //public string _name; THIS DOESN'T DO ANYTHING RIGHT NOW
 
 
     public Activity()

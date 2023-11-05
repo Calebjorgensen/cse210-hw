@@ -10,7 +10,12 @@ class Program
 
         do
         {
-            Console.WriteLine("This is a start of the program");
+            Console.WriteLine("Welcome to your Mindfullness program");
+            Console.WriteLine("Choose of the following Activites");
+            Console.WriteLine("1. Breathing Activity");
+            Console.WriteLine("2. Reflection Activity");
+            Console.WriteLine("3. Listening Activity");
+            Console.WriteLine("4. Exit Program");
             choice = Console.ReadLine();
 
             switch(choice)
@@ -19,7 +24,7 @@ class Program
                 Console.WriteLine("Case 1");
                 break;
             }
-        }while(choice != "5");
+        }while(choice != "4");
 
     }
 }

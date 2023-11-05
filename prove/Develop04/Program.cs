@@ -8,6 +8,7 @@ class Program
 
         string choice;
 
+
         do
         {
             Console.WriteLine("Welcome to your Mindfullness program");
@@ -21,7 +22,8 @@ class Program
             switch(choice)
             {
                 case "1":
-                Console.WriteLine("Case 1");
+                Activity a1 = new Activity();
+                a1.startingActivity();
                 break;
                 
                 case "2":

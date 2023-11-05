@@ -22,15 +22,18 @@ class Program
             switch(choice)
             {
                 case "1":
+                Console.Clear();
                 Activity a1 = new Activity();
                 a1.startingActivity();
                 break;
                 
                 case "2":
+                Console.Clear();
                 Console.WriteLine("Case 2");
                 break;
 
                 case "3":
+                Console.Clear();
                 Console.WriteLine("Case 3");
                 break;
             }

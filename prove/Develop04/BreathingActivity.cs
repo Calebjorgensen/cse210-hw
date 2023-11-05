@@ -1,6 +1,6 @@
 using System;
 
-class BreathingActivity
+class BreathingActivity : Activity
 {
-    
+
 }

@@ -1,4 +1,5 @@
 using System;
+using Microsoft.Win32.SafeHandles;
 
 
 class Menu
@@ -7,6 +8,13 @@ class Menu
     public string _eentres;
     public string _deserts;
     public string name;
+    private string secret;
+
+    public string Secret
+    {
+        get{return secret;}
+        set{name = value;}
+    }
 
     public Menu(string n)
     {
@@ -34,11 +42,13 @@ class Program
     static void Main(string[] args)
     {
         Menu m = new Menu("Caleb");
+        m.Secret = "Secret Menu";
         m._apps = "Cheese Sticks";
         m._eentres = "Lets go nuts burger";
         m._deserts = "milkshakes";
         m.menuList();
         Console.WriteLine(m.getName());
+        Console.WriteLine(m.Secret);
       
     }    
 

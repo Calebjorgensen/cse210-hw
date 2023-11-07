@@ -32,6 +32,15 @@ class Program
     {
         Console.WriteLine("Hello World");
         Entry e = new Entry();
+
+        int [] arr = {2,3};
+        int sum = 0;
+
+        foreach(int x in arr)
+        {
+            sum += x;
+        }
+        Console.WriteLine(sum);
       
     }    
 

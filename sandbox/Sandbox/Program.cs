@@ -33,10 +33,10 @@ class Program
         Console.WriteLine("Hello World");
         Entry e = new Entry();
 
-        int [] arr = {124,324,523,532,234,554};
+        int [] numbers = {5,6,7,8,9};
         int sum = 0;
 
-        foreach(int x in arr)
+        foreach(int x in numbers)
         {
             sum += x;
         }

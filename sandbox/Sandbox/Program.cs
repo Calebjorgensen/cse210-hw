@@ -9,11 +9,6 @@ class Calculator
     //public int _mult;
     //public double _div;
 
-    public Calculator()
-    {
-        Console.WriteLine("This is a Calculator Program");
-
-    }
 
     public int Addition()
     {
@@ -21,6 +16,7 @@ class Calculator
         int add2 = Convert.ToInt32(Console.ReadLine());
 
         int addSum = add1 + add2;
+        Console.WriteLine(addSum);
         return addSum;
         
     }
@@ -30,6 +26,7 @@ class Calculator
         int sub2 = Convert.ToInt32(Console.ReadLine());
 
         int subSum = sub1 - sub2;
+        Console.WriteLine(subSum);
         return subSum;
 
     }
@@ -40,6 +37,7 @@ class Calculator
         int muli2 = Convert.ToInt32(Console.ReadLine());
 
         int muliSum = muli1 * muli2;
+        Console.WriteLine(muliSum);
         return muliSum;
     }
     public double Division()
@@ -48,6 +46,7 @@ class Calculator
         int div2 = Convert.ToInt32(Console.ReadLine());
 
         int divSum = div1 / div2;
+        Console.WriteLine(divSum);
         return divSum;
 
     }
@@ -66,11 +65,41 @@ class Program
 {
     static void Main(string[] args)
     {
+        string choice;
         Calculator math = new Calculator();
-        Console.WriteLine(math.Addition());
-        Console.WriteLine(math.Substraction());
-        Console.WriteLine(math.Times());
-        Console.WriteLine(math.Division());
+
+        do{
+        Console.WriteLine("");
+        Console.WriteLine("");
+        Console.WriteLine("Calculator here to help.");
+        Console.WriteLine("Choose one of the options");
+        Console.WriteLine("1. Addition");
+        Console.WriteLine("2. Substraction");
+        Console.WriteLine("3. Times");
+        Console.WriteLine("4. Division");
+        Console.WriteLine("");
+
+        choice = Console.ReadLine();
+
+        switch(choice)
+        {
+            case "1":
+            math.Addition();
+            break;
+
+            case "2":
+            math.Substraction();
+            break;
+
+            case "3":
+            math.Times();
+            break;
+
+            case "4":
+            math.Division();
+            break;
+        }
+        }while(choice != "5");
 
     }    
 

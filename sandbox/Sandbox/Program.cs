@@ -1,54 +1,37 @@
 using System;
+using System.ComponentModel.Design;
 
-
-
-class Menu
+class Entry
 {
-    public string _apps;
-    public string _eentres;
-    public string _deserts;
-    public string name;
-    private string secret;
 
-    public string Secret
+
+    public Entry()
     {
-        get{return secret;}
-        set{name = value;}
+        Console.WriteLine("Welcome to Sammy's Food Shack");
     }
-
-    public Menu(string n)
+    public string [] menu = {"soup","crab","steak","desert"};
+    
+    
+    public void Display()
     {
-        Console.WriteLine("Welcome to Broken Barrell");
-        Console.WriteLine("Heres our menu");
-        Console.WriteLine("");
-        name = n;
-        
-    }
 
-    public string getName()
-    {
-        return name;
-    }
-
-    public void menuList()
-    {
-        Console.WriteLine($"appetizers: {_apps}\nEetnres: {_eentres}\nDeserts: {_deserts}");
     }
 }
+
+class Calculator
+{
+
+}
+
+
 
 
 class Program
 {
     static void Main(string[] args)
     {
-        Menu m = new Menu("Caleb");
-        m.Secret = "Secret Menu";
-        m._apps = "Cheese Sticks";
-        m._eentres = "Lets go nuts burger";
-        m._deserts = "milkshakes";
-        m.menuList();
-        Console.WriteLine(m.getName());
-        Console.WriteLine(m.Secret);
+        Console.WriteLine("Hello World");
+        Entry e = new Entry();
       
     }    
 

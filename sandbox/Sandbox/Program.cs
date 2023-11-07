@@ -42,10 +42,10 @@ class Calculator
     }
     public double Division()
     {
-        int div1 = Convert.ToInt32(Console.ReadLine());
-        int div2 = Convert.ToInt32(Console.ReadLine());
+        double div1 = Convert.ToInt32(Console.ReadLine());
+        double div2 = Convert.ToInt32(Console.ReadLine());
 
-        int divSum = div1 / div2;
+        double divSum = div1 / div2;
         Console.WriteLine(divSum);
         return divSum;
 

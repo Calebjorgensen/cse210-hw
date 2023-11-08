@@ -2,20 +2,22 @@ using System;
 
 
 
+
 class Program
 {
     static void Main(string[] args)
     {
        
-        int [] test = new int [10];
-        for(int x = 0; x < 10; x++)
+        int [] math = {34,43,23,64,43};
+        int sum = 0;
+
+        foreach(int x in math)
         {
-            test[x] = x*3;
+            sum += x;
         }
-        foreach(int x in test)
-        {
-            Console.WriteLine(x);
-        }
+        Console.WriteLine(sum);
+
+
 
     }    
 

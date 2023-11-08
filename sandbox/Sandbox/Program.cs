@@ -8,7 +8,7 @@ class Program
     {
        
         int [] test = new int [10];
-        for(int x = 2; x < 10; x++)
+        for(int x = 0; x < 10; x++)
         {
             test[x] = x*3;
         }

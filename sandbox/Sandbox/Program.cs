@@ -84,18 +84,22 @@ class Program
         switch(choice)
         {
             case "1":
+            Console.Clear();
             math.Addition();
             break;
 
             case "2":
+            Console.Clear();
             math.Substraction();
             break;
 
             case "3":
+            Console.Clear();
             math.Times();
             break;
 
             case "4":
+            Console.Clear();
             math.Division();
             break;
         }

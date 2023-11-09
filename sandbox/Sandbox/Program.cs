@@ -8,14 +8,15 @@ class Program
     static void Main(string[] args)
     {
        
-        int [] math = {34,43,23,64,43};
-        int sum = 0;
+        int [ ] arr = {8,2,6};
+        int y =0;
 
-        foreach(int x in math)
+        foreach(int x in arr)
         {
-            sum += x;
+            y +=x/2;
         }
-        Console.WriteLine(sum);
+        Console.WriteLine(y);
+
 
 
 

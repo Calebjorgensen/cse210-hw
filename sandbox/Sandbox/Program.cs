@@ -7,21 +7,17 @@ class Program
 {
     static void Main(string[] args)
     {
-       
-        int [ ] arr = {8,2,6};
-        int y =0;
 
-        foreach(int x in arr)
+        int number = 0;
+
+        do
         {
-            y +=x/2;
-        }
-        Console.WriteLine(y);
+            Console.WriteLine(number);
 
+            number++;
+        }while(number<5);
 
-
+        Console.WriteLine("Loop Finished");
 
     }    
-
-
-
 }

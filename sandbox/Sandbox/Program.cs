@@ -1,47 +1,28 @@
 using System;
 
-class Game
+
+class Time
 {
-    public Game()
+    public Time()
     {
-        Console.WriteLine("Welcome to my program.");
+        Console.WriteLine("Welcome");
     }
 
-    public int Loop()
+    public void Date()
     {
+        DateTime currentDate = DateTime.Now;
+        Console.WriteLine(currentDate);
 
-        
-        int answer = 14;
-        int choice = Convert.ToInt32(Console.ReadLine());
-        do
-        {
-        if(answer < choice)
-        {
-            Console.WriteLine("Answer is too low");
-            break;
-        }
-        else if( answer > choice)
-        {
-            Console.WriteLine("Higher");
-            break;
-        }
-        }while(answer != choice);
-
-        Console.WriteLine("That is the right answer");
-
-        return choice;
     }
-
 }
-
 
 
 class Program
 {
     static void Main(string[] args)
     {
-        Game g = new Game();
-        g.Loop();
+        Time t = new Time();
+        t.Date();
         
     }    
 }

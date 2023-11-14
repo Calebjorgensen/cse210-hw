@@ -35,7 +35,7 @@ class Time
         Entry e = new Entry();
         DateTime currentDateTime = DateTime.Now;
         e.date = currentDateTime.ToShortDateString();
-        e.user = "Caleb";
+        e.user = Console.ReadLine();
         e.Info();
 
 

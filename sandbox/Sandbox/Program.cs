@@ -1,4 +1,5 @@
 using System;
+using System.Xml.Serialization;
 
 class Game
 {
@@ -9,22 +10,24 @@ class Game
 
     public int Loop()
     {
+
+        
         int answer = 14;
-
         int choice = Convert.ToInt32(Console.ReadLine());
-
+        do
+        {
         if(answer < choice)
         {
             Console.WriteLine("Answer is too low");
+            break;
         }
         else if( answer > choice)
         {
             Console.WriteLine("Higher");
+            break;
         }
-        else
-        {
-            Console.WriteLine("Right answer");
-        }
+        }while(answer != choice);
+        Console.WriteLine("That is the right answer");
 
         return choice;
     }

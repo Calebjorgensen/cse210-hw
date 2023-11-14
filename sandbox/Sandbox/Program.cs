@@ -7,15 +7,28 @@ class Game
         Console.WriteLine("Welcome to my program.");
     }
 
-    public int Add()
+    public int Loop()
     {
-        int x = 7;
-        int y = 7;
+        int answer = 14;
 
-        int sum = x + y;
-        Console.WriteLine(sum);
-        return sum;
+        int choice = Convert.ToInt32(Console.ReadLine());
+
+        if(answer < choice)
+        {
+            Console.WriteLine("Answer is too low");
+        }
+        else if( answer > choice)
+        {
+            Console.WriteLine("Higher");
+        }
+        else
+        {
+            Console.WriteLine("Right answer");
+        }
+
+        return choice;
     }
+
 }
 
 
@@ -25,7 +38,7 @@ class Program
     static void Main(string[] args)
     {
         Game g = new Game();
-        g.Add();
+        g.Loop();
         
     }    
 }

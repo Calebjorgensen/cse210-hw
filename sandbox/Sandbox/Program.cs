@@ -1,5 +1,4 @@
 using System;
-using System.Xml.Serialization;
 
 class Game
 {
@@ -27,6 +26,7 @@ class Game
             break;
         }
         }while(answer != choice);
+
         Console.WriteLine("That is the right answer");
 
         return choice;

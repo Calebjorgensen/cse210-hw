@@ -1,4 +1,5 @@
 using System;
+using System.Diagnostics.CodeAnalysis;
 
 
 class Entry
@@ -12,16 +13,34 @@ class Entry
     }
 }
 
+class Math
+{
+    public int Add()
+    {
+        int x = Convert.ToInt32(Console.ReadLine());
+        int y = Convert.ToInt32(Console.ReadLine());
+
+        int sum = x + y;
+        Console.WriteLine(sum);
+        return sum;
+    }
+}
+
 
 class Time
 {
     public void Date()
     {
+
         Entry e = new Entry();
         DateTime currentDateTime = DateTime.Now;
         e.date = currentDateTime.ToShortDateString();
         e.user = "Caleb";
         e.Info();
+
+
+        Math m = new Math();
+        m.Add();
     }
 }
 

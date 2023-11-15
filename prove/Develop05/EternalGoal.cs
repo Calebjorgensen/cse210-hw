@@ -1,12 +1,23 @@
 public class EternalGoal : Goal
 {
+    public EternalGoal(string name, string desc, int score):base(name, desc, score)
+    {
+
+    }
     public override void RecordEvent()
     {
-        base.RecordEvent(); // Look up base, might get rid of it. 
+        base.RecordEvent();
     }
 
-    public override void IsComplete()
+    public override bool IsComplete()
     {
-        base.IsComplete();
+        return base.IsComplete();
     }
+    public override string GetPrintableGoal()
+    {
+        return ($"[ ] {_name} ({_desc})");
+    }
+    
+    
+
 }

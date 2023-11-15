@@ -18,5 +18,12 @@ public class Menu
     {
 
     }
-    
+    public void RecordEvent()
+    {
+        
+    }
+    public void CurrentScore()
+    {
+
+    }
 }

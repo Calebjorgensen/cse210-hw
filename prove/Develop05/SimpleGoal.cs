@@ -13,4 +13,9 @@ public class SimpleGoal : Goal
     {
         return base.IsComplete();
     }
+    public override string GetPrintableGoal()
+    {
+        return ($"{_name}");
+        // need to add a if statement here for 2 different retrun types.
+    }
 }

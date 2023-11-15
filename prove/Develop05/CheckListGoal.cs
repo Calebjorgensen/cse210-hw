@@ -3,18 +3,23 @@ public class CheckListGoal : Goal
     private int _bonus;
     private int _currentAmount;
     private int _totalAmount;
+
+    public CheckListGoal(string name, string desc, int score):base(name, desc, score)
+    {
+
+    }
         public override void RecordEvent()
     {
         base.RecordEvent();
     }
 
-    public override void IsComplete()
+    public override bool IsComplete()
     {
-        base.IsComplete();
+        return base.IsComplete();
     }
-        public virtual string GetGoal()
+        public override string GetPrintableGoal()
     {
-        
+        return ($"{_name}");
     }
 
 }

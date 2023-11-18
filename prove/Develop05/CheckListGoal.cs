@@ -19,7 +19,7 @@ public class CheckListGoal : Goal
     }
         public override string GetPrintableGoal()
     {
-        return ($"{_name}");
+        return ($"[ ] {_name} ({_desc}) -- Currently Completed: {_currentAmount}/{_totalAmount}");
     }
 
 }

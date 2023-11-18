@@ -15,7 +15,8 @@ public class SimpleGoal : Goal
     }
     public override string GetPrintableGoal()
     {
-        return ($"{_name}");
+        
+        return ($"[ ] {_name}({_desc})");
         // need to add a if statement here for 2 different retrun types.
     }
 }

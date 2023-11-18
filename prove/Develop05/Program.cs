@@ -4,10 +4,10 @@ class Program
 {
     static void Main(string[] args)
     {
-        int user;
+        string user = "0";
         Menu m = new Menu();
 
-        while (true)
+        while (user != "6")
         {
             Console.WriteLine("Menu:");
             Console.WriteLine("1. Create new Goal");
@@ -17,27 +17,27 @@ class Program
             Console.WriteLine("5. Record Event");
             Console.WriteLine("6. Quit");
 
-            user = Convert.ToInt32(Console.ReadLine());
+            user = Console.ReadLine();
 
             switch(user)
             {
-                case 1:
+                case "1":
+                m.CreateNewGoal();
+                break;
+
+                case "2":
+                m.ListGoals();
+                break;
+
+                case "3":
                 Console.WriteLine("");
                 break;
 
-                case 2:
+                case "4":
                 Console.WriteLine("");
                 break;
 
-                case 3:
-                Console.WriteLine("");
-                break;
-
-                case 4:
-                Console.WriteLine("");
-                break;
-
-                case 5:
+                case "5":
                 Console.WriteLine("");
                 break;
             }

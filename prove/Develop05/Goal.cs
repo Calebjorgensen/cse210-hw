@@ -30,7 +30,7 @@ public class Goal
 
     public virtual string GetGoal()
     {
-        return ($"[ ] {_name}({_desc})");
+        return "";
     }
 
 

@@ -17,7 +17,12 @@ public class EternalGoal : Goal
     {
         return ($"[ ] {_name} ({_desc})");
     }
-    
-    
+
+    public override string GetGoal()
+    {
+        return $"Eternal~{_name}~{_desc}~{_score}";
+    }
+
+
 
 }

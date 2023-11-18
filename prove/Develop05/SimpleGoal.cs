@@ -1,12 +1,14 @@
 public class SimpleGoal : Goal
 {
+    private bool _isComplete;
     public SimpleGoal(string name, string desc, int score):base(name, desc, score)
     {
+        _isComplete = false;
 
     }
         public override void RecordEvent()
     {
-        base.RecordEvent();
+        _isComplete = true;
     }
 
     public override bool IsComplete()
@@ -15,8 +17,17 @@ public class SimpleGoal : Goal
     }
     public override string GetPrintableGoal()
     {
-        
-        return ($"[ ] {_name}({_desc})");
-        // need to add a if statement here for 2 different retrun types.
+        if(_isComplete == true)
+        {
+            return ($"[X] {_name}({_desc})");
+        }
+        else
+        {
+            return ($"[ ] {_name}({_desc})");
+        }    
+    }
+    public override string GetGoal()
+    {
+        return $"SimpleGoal~{_name}~{_desc}~{_score}";
     }
 }

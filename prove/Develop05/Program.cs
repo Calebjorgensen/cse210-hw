@@ -5,6 +5,7 @@ class Program
     static void Main(string[] args)
     {
         int user;
+        Menu m = new Menu();
 
         while (true)
         {

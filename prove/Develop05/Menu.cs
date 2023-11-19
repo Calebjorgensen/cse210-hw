@@ -93,6 +93,7 @@ public class Menu
             // You can add text to the file with the WriteLine method
             outputFile.WriteLine("");
             
+            
             // You can use the $ and include variables just like with Console.WriteLine
             
             outputFile.WriteLine($"{_goals}");

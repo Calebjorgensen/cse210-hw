@@ -1,4 +1,5 @@
-
+using System;
+using System.IO;
 
 public class Menu
 {
@@ -85,12 +86,12 @@ public class Menu
     public void SaveGoal()
     {
         // remember the score save
-        string fileName = "myFile.txt";
+        string fileName = Console.ReadLine();
 
-        using (StreamWriter outputFile = new StreamWriter(filename))
+        using (StreamWriter outputFile = new StreamWriter(fileName))
         {
             // You can add text to the file with the WriteLine method
-            outputFile.WriteLine("This will be the first line in the file.");
+            outputFile.WriteLine("");
             
             // You can use the $ and include variables just like with Console.WriteLine
             string color = "Blue";

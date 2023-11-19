@@ -92,6 +92,10 @@ public class Menu
         {
             // You can add text to the file with the WriteLine method
             outputFile.WriteLine("");
+            foreach(Goal goal in _goals)
+        {
+            Console.WriteLine(goal.GetPrintableGoal());
+        }
             
             
             // You can use the $ and include variables just like with Console.WriteLine

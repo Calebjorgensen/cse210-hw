@@ -9,6 +9,7 @@ class Program
 
         while (user != "6")
         {
+            
             Console.WriteLine($"Score: ");
             Console.WriteLine("Menu:");
             Console.WriteLine("1. Create new Goal");

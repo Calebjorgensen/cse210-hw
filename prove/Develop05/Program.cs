@@ -30,15 +30,15 @@ class Program
                 break;
 
                 case "3":
-                Console.WriteLine("");
+                m.SaveGoal();
                 break;
 
                 case "4":
-                Console.WriteLine("");
+                m.LoadListGoals();
                 break;
 
                 case "5":
-                Console.WriteLine("");
+                m.RecordEvent();
                 break;
             }
 

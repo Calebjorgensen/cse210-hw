@@ -88,7 +88,7 @@ public class Menu
     }
     public void LoadListGoals()
     {
-        // 
+        // This mehtod will need to be done after the save goal
     }
     public void RecordEvent()
     {

@@ -94,14 +94,14 @@ public class Menu
             outputFile.WriteLine("");
             
             // You can use the $ and include variables just like with Console.WriteLine
-            string color = "Blue";
-            outputFile.WriteLine($"My favorite color is {color}");
+            
+            outputFile.WriteLine($"{_goals}");
         }
     }
     public void LoadListGoals()
     {
         // This mehtod will need to be done after the save goal
-        string filename = "myFile.txt";
+        string filename = Console.ReadLine();
         string[] lines = System.IO.File.ReadAllLines(filename);
 
         foreach (string line in lines)
@@ -109,7 +109,7 @@ public class Menu
             string[] parts = line.Split(",");
 
             string firstName = parts[0];
-            string lastName = parts[1];
+            //string lastName = parts[1];
         }
     }
     public void RecordEvent()

@@ -5,6 +5,13 @@ class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("Hello World");
+        int user = 0;
+
+        switch(user)
+        {
+            case 1:
+            Console.WriteLine("Hello");
+            break;
+        }
     }    
 }

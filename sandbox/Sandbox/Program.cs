@@ -1,4 +1,6 @@
 using System;
+using System.Security.Cryptography.X509Certificates;
+using System.IO;
 
 class Person
 {
@@ -30,5 +32,21 @@ class Program
         {
             Console.WriteLine(p._firstName);
         }
+
+        SaveToFile(people);
     }    
+
+    public static void SaveToFile(List<Person> people)
+    {
+        Console.WriteLine("Saving to file... ");
+        string fileName = Console.ReadLine();
+
+        using (StreamWriter outputFile = new StreamWriter(fileName))
+        {
+            foreach(Person p in people)
+            {
+                outputFile.WriteLine(p._firstName);
+            }
+        }
+    }
 }

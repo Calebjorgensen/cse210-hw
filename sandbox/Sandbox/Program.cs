@@ -39,13 +39,13 @@ class Program
     public static void SaveToFile(List<Person> people)
     {
         Console.WriteLine("Saving to file... ");
-        string fileName = Console.ReadLine();
+        string fileName = "people.txt";
 
         using (StreamWriter outputFile = new StreamWriter(fileName))
         {
             foreach(Person p in people)
             {
-                outputFile.WriteLine(p._firstName);
+                outputFile.WriteLine($"{p._firstName}~{p._lastName}~{p._age}");
             }
         }
     }

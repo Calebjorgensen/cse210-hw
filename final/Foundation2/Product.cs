@@ -3,23 +3,18 @@ class Product
     private string _name;
     private string _productId;
     private int _price;
-    private string _quantity;
+    private int _quantity;
 
-    public Product(string name, string productId, int price, string quantity)
+    public Product(string name, string productId, int price, int quantity)
     {
         _name = name;
         _productId = productId;
         _price = price;
         _quantity = quantity;
     }
-    public Product(int price)
+    public string GetProduct()
     {
-        price = 0;
+        return $"Product Name: {_name}, Product ID: {_productId}, Cost: {_price}, Qauntity: {_quantity}";
     }
-    public int GetPrice()
-    {
-        int price = 10;
-        return price;
-    }
-
+    // Remember to look at the learning activity to help this part.
 }

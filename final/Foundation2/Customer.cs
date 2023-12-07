@@ -9,4 +9,9 @@ class Customer
         _name = name;
         _address = address;
     }
+
+    public string GetCustomerName()
+    {
+        return $"{_name}";
+    }
 }

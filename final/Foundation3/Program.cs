@@ -1,5 +1,4 @@
 using System;
-using System.Dynamic;
 
 class Program
 {
@@ -30,6 +29,7 @@ class Program
             Console.WriteLine("");
             Console.WriteLine("Full Details");
             Console.WriteLine(reception1.GetFullDetails());
+
         
         }
     }

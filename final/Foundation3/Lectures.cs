@@ -4,8 +4,8 @@ class Lectures : Event
     private string _capacity;
     public Lectures(string title, string desc, string date, string time, Address address, string speakerName, string capacity): base(title, desc, date, time, address)
     {
-        _speakerName = speakerName;
-        _capacity = capacity;
+        this._speakerName = speakerName;
+        this._capacity = capacity;
     }
 
     public string GetFullDetails()

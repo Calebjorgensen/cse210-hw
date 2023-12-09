@@ -9,10 +9,10 @@ class Address
 
     public Address(string street, string city, string state, string zip)
     {
-        _street = street;
-        _city = city;
-        _state = state;
-        _zip = zip;
+        this._street = street;
+        this._city = city;
+        this._state = state;
+        this._zip = zip;
     }
     public string GetAddressName()
     {

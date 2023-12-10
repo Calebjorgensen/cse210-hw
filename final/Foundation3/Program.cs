@@ -17,6 +17,7 @@ class Program
 
         Console.WriteLine("");
         Console.WriteLine("~~~  Upcoming Lecture Event  ~~~");
+        Console.WriteLine("");
         Console.WriteLine(lecture1.GetStandardDetails());
         Console.WriteLine("");
         Console.WriteLine(lecture1.GetFullDetails());
@@ -26,6 +27,7 @@ class Program
         Console.WriteLine("");
 
         Console.WriteLine("~~~  Upcoming Reception Event  ~~~");
+        Console.WriteLine("");
         Console.WriteLine(reception1.GetStandardDetails());
         Console.WriteLine("");
         Console.WriteLine(reception1.GetFullDetails());
@@ -35,6 +37,7 @@ class Program
         Console.WriteLine("");
 
         Console.WriteLine("~~~  Upcoming OutdoorGathering Event  ~~~");
+        Console.WriteLine("");
         Console.WriteLine(outdoorGathering1.GetStandardDetails());
         Console.WriteLine("");
         Console.WriteLine(outdoorGathering1.GetFullDetails());

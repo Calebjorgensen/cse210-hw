@@ -7,7 +7,7 @@ class Reception : Event
     }
     public string GetFullDetails()
     {
-        return $"Reception: {_title}, {_desc}, {_date}, {_time}, {_address.GetAddressName()}, {_rsvp}";
+        return $"Reception: Title: {_title} ~ Description: {_desc} ~ Date: {_date} ~ Time: {_time} ~ Address: {_address.GetAddressName()} ~ RSVP to: {_rsvp}";
     }
 
 }

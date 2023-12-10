@@ -7,7 +7,7 @@ class Event
     protected string _time;
     protected Address _address;
 
-    // This is the Parent Constuctor, This is all the details that are needed for Standard details. 
+    
     public Event(string title, string desc, string date, string time, Address address)
     {
         this._title = title;
@@ -19,11 +19,11 @@ class Event
 
     public string GetStandardDetails()
     {
-        return $"{_title}, {_desc}, {_date}, {_time}, {_address.GetAddressName()}";
+        return $"Title: {_title} ~ Description: {_desc} ~ Date: {_date} ~ Time: {_time} ~ Address: {_address.GetAddressName()}";
     }
     public string GetShortDetails()
     {
-        return $"{GetType().Name}: {_title}, {_date}";
+        return $"{GetType().Name} ~ Title: {_title} ~ Date: {_date}";
     }
 
 }

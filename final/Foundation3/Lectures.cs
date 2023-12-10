@@ -12,7 +12,7 @@ class Lectures : Event
 
     public string GetFullDetails()
     {
-        return $"Lecture: {_title}, {_speakerName}, {_desc}, {_date}, {_time}, {_address.GetAddressName()}, {_capacity}";
+        return $"Lecture: Title: {_title} ~ Speaker: {_speakerName} ~ Description: {_desc} ~ Date: {_date} ~ Time: {_time} ~ Address: {_address.GetAddressName()} ~ Seating: {_capacity}";
     }
 
 }

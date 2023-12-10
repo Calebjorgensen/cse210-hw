@@ -7,7 +7,7 @@ class OutdoorGathering : Event
     }
     public string GetFullDetails()
     {
-        return $"OutdoorGathering: {_title}, {_desc}, {_date}, {_time}, {_address.GetAddressName()}, {_weatherForcast}";
+        return $"OutdoorGathering: Title: {_title} ~ Description: {_desc} ~ Date: {_date} ~ Time: {_time} ~ Address: {_address.GetAddressName()} ~ Weather Report: {_weatherForcast}";
     }
 
 }

@@ -33,6 +33,6 @@ class Running : Activity
             distanceUnit = "Km";
             speedUnit = "Kph";
         }
-        return $"{base.GetSummary()} - Distance: {Distance} {distanceUnit}" + $"Speed: {GetSpeed()} {speedUnit}, Pace: {GetPace()} min per {distanceUnit}";
+        return $"{base.GetSummary()} - Distance: {Distance} {distanceUnit}" + $" Speed: {GetSpeed()} {speedUnit}, Pace: {GetPace()} min per {distanceUnit}";
     }
 }
